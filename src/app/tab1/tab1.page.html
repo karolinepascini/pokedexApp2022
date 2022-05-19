@@ -1,17 +1,62 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Pokedex </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+  <ion-card color="buba" >
+    <ion-card-header>
+      <img
+        class="buba"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+      <p class="color">Bubasaur</p>
+    <ion-badge color="grass">Grass</ion-badge>
+    <ion-badge color="poison">Poison</ion-badge> </ion-card-header>
+  </ion-card>
+      </ion-col>
+
+      <ion-col>
+  <ion-card color="chamander" >
+    <ion-card-header>
+      <img
+        class="img"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"  />
+      <p class="color">Chamander</p>
+    <ion-badge color="fire">Fire</ion-badge> </ion-card-header>
+  </ion-card>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col>
+  <ion-card color="water" >
+    <ion-card-header>
+      <img
+        class="img"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"  />
+      <p class="color">Squirtle</p>
+    <ion-badge color="water">Water</ion-badge> </ion-card-header>
+  </ion-card>
+</ion-col>
+
+<ion-col>
+  <ion-card color="electric" >
+    <ion-card-header>
+      <img
+        class="img"
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"  />
+      <p class="color">Pikachu</p>
+    <ion-badge color="electric">Eletric</ion-badge> </ion-card-header>
+  </ion-card>
+
+</ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-content >
+
