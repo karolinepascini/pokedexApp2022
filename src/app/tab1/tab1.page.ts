@@ -15,12 +15,19 @@ export class Tab1Page implements OnInit {
   constructor(public pokemonService: PokemonService) {}
 
   ngOnInit() {
+   this.buscarPokemon();
+  }
+
+  buscarPokemon (){
     this.pokemonService.buscarTodosPokemon().subscribe((dados) => {
       this.total = dados['count'];
       this.next = dados['next'];
       this.previous = dados['previous'];
-      this.listaPokemon = dados['results'];
+     // this.listaPokemon =dados['results'] ;
       console.log(dados);
+        for(let pokemon of dados['results']){
+
+        }
     });
   }
 }
